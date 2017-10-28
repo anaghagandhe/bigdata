@@ -20,7 +20,7 @@ class LogParserSpec extends FlatSpec {
     var line2 = "::1 - - [11/May/2015:06:44:40 -0400] \"OPTIONS * HTTP/1.0\" 200 125 \"-\" \"Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.7 OpenSSL/1.0.1f (internal dummy connection)\""
     assert(!utils.containsIP(line2))
   }
-  
+    
   "CLASSA" should "Return true if class is A" in {
         val utils = new Utils
         assert(utils.isClassA("121.242.40.10 "))
